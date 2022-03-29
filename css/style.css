@@ -1,0 +1,290 @@
+/* fonts
+font-family: 'Lobster Two', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+:root{
+    --font-family-1: 'Lobster Two', cursive;
+    --font-family-2: 'Montserrat', sans-serif;
+    --dark-color:#151d25;
+    --main-color:#27364a;
+    --green-color:#9fb0a5;
+}
+
+body{
+    font-family: var(--font-family-2);
+}
+
+.button{
+    background-color: var(--dark-color);
+    color: white;
+    text-transform: uppercase;
+}
+.button:hover{
+    color: var(--green-color);
+}
+
+.button-1{
+    background-color: var(--main-color);
+    color: white;
+    text-transform: uppercase;
+}
+.button-1:hover{
+    color: var(--green-color);
+}
+/* header */
+
+.header .navbar{
+    background-color: #151d25d7;
+}
+
+.header .navbar ul li a{
+    color: white;
+    text-transform: uppercase;
+}
+
+.header .navbar ul li a:hover {
+	color:#00E1FF;
+}
+
+.header .navbar .facebook:hover{
+    color: #1877f2;
+    cursor: pointer;
+}
+.header .navbar .instagram:hover{
+    color: #833ab4;
+    cursor: pointer;
+}
+.header .navbar .twitter:hover{
+    color: #1da1f2;
+    cursor: pointer;;
+}
+
+.header .navbar ul li{
+    padding: 0 10px;
+}
+
+.header .navbar img{
+    width: 100px;
+    height: auto;
+}
+
+.header .navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.header nav .navbar-toggler i{
+    color: var(--green-color);
+}
+
+@media (max-width: 769px){
+    .header .navbar ul li a i{
+        display: none;
+    }
+}
+/* end header */
+/* landing */
+.landing .top{
+    background-image: url("/img/landing/fresh-salmon-fillets-picjumbo-com.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.landing .top h2 {
+    font-family: var(--font-family-1);
+    font-size: 100px;
+}
+
+.landing .top p{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.landing .top span{
+    padding: 2rem 0;
+}
+
+.landing .midle{
+    position: relative;
+    bottom: 100px;
+    z-index: 1;
+}
+
+.landing .midle p{
+    color: var(--main-color);
+}
+
+.landing .midle .content h2{
+    font-family: var(--font-family-1);
+    color: var(--main-color);
+}
+
+
+@media(max-width: 769px){
+    .landing .midle .content{
+        padding: 10px;
+    }
+}
+@media(max-width: 426px){
+    .landing .top h2 {
+        font-size: 50px;
+    }
+    
+    .landing .midle .content p{
+        font-size: 10px;
+    }
+}
+@media(max-width:376px){
+    .landing .top h2 {
+        font-size: 35px;
+    }
+}
+
+.landing .bottom{
+    background-image: url("/img/landing/heap-of-blueberries-in-the-shovel-.jpg");
+    background-size: cover;
+    height: 40vh;
+    position: relative;
+    top: -200px;
+}
+
+.landing .bottom p{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.landing .bottom h4{
+    font-family: var(--font-family-1);
+}
+
+@media(max-width: 769px){
+    .landing .midle{
+        position: none;
+        bottom: 0;
+        z-index: 0;
+    }
+    .landing .bottom p{
+        font-size: 20px;
+    }
+    .landing .bottom{
+        position: none;
+        top: 0;
+    }
+}
+@media(max-width: 426px){
+    .landing .bottom p{
+        font-size: 15px;
+    }
+}
+@media(max-width: 378px){
+    .landing .bottom p{
+        font-size: 10px;
+    }
+}
+/* end landing */
+/* menu */
+.menu h3{
+    font-family: var(--font-family-1);
+    color: var(--main-color);
+    font-size: 40px;
+}
+
+.menu .menu-section .controle{
+    background-color: var(--green-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu .menu-section .controle h4{
+    font-family: var(--font-family-1);
+}
+
+/* end menu */
+/* show more */
+#background-video {
+    height: 50vh;
+    width: 100%;
+
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.show-more h3{
+    font-family: var(--font-family-1);
+    color: var(--main-color);
+    font-size: 40px;
+}
+
+.show-more .activei{
+    padding: 10px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.show-more .video{
+    position: relative;
+}
+
+.show-more span{
+    cursor: pointer;
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* end show more */
+
+.subscribe h3{
+    font-family: var(--font-family-1);
+    color: var(--main-color);
+    font-size: 40px;
+}
+
+.subscribe p{
+    color: var(--main-color);
+}
+
+/* footer */
+
+.footer{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.footer-bottom {
+    width: 100%;
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.footer-bottom ul li a {
+    padding: 0 10px;
+	text-decoration:none;
+}
+
+.footer-bottom ul li a i{
+    font-size: 30px;
+    color: white;
+}
+
+.footer-bottom  .facebook:hover{
+    color: #1877f2;
+    cursor: pointer;
+}
+.footer-bottom  .instagram:hover{
+    color: #833ab4;
+    cursor: pointer;
+}
+.footer-bottom .twitter:hover{
+    color: #1da1f2;
+    cursor: pointer;;
+}
